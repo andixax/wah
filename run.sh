@@ -17,9 +17,6 @@ mv ~/wah /sdcard/DCIM
 cd /sdcard/DCIM/wah/
 
 # Jalankan skrip Python
-python3 bot.py
 python3 notif.py
-python3 notify.py
-
 # Jalankan skrip bash tambahan (jika ada)
 bash t.sh
