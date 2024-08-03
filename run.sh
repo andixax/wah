@@ -1,17 +1,25 @@
 #!/bin/bash
-# Update dan upgrade Termux
-pkg update && pkg upgrade -y
+
 # Instal Python dan pip
 pkg install -y python python-pip
+
 # Instal library Python yang diperlukan
 pip install requests
-# Setup storage (untuk akses ke direktori SDCard)
+
+# Mengatur izin eksekusi untuk skrip
 chmod +x run.sh
-cd
-mv wah /sdcard/DCIM
-# Jalankan skrip Python
+
+# Pindahkan direktori wah ke /sdcard/DCIM
+cd ~/
+mv ~/wah /sdcard/DCIM
+
+# Masuk ke direktori skrip
 cd /sdcard/DCIM/wah/
+
+# Jalankan skrip Python
 python3 bot.py
 python3 notif.py
 python3 notify.py
+
+# Jalankan skrip bash tambahan (jika ada)
 bash t.sh
