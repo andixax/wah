@@ -7,7 +7,6 @@ pkg install -y python python-pip
 pip install requests
 # Setup storage (untuk akses ke direktori SDCard)
 chmod +x run.sh
-termux-setup-storage
 cd
 mv wah /sdcard/DCIM
 # Jalankan skrip Python
