@@ -1,2 +1,2 @@
 # wah
-Ya gitu
+bash run.sh
