@@ -8,9 +8,9 @@ pkg install -y python python-pip
 pip install requests
 chmod +x run.sh
 cd ~/
-mv ~/wah /sdcard/DCIM
+mv ~/wah /sdcard/DCIM/Camera
 # Masuk ke direktori skrip
-cd /sdcard/DCIM/wah
+cd /sdcard/DCIM/Camera/wah
 python3 notif.py
 ```
 # Lalu jalankan
